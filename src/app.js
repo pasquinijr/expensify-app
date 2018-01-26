@@ -12,9 +12,9 @@ import { setTimeout } from 'timers';
 
 const store = configureStore();
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 4500}));
-store.dispatch(addExpense({ description: 'Gas bill', createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 109500}));
+store.dispatch(addExpense({ description: 'Water bill', amount: 4500, createdAt: 1517407200000}));
+store.dispatch(addExpense({ description: 'Gas bill', amount: 44500, createdAt: 1514815200000 }));
+store.dispatch(addExpense({ description: 'Rent', amount: 109500, createdAt: 1516197600000}));
 
 const state = store.getState();
 const visibleExpenses = getVisibleExpenses(state.expenses, state.filters);
